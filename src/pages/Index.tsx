@@ -1,7 +1,7 @@
-import SacredDashboard from "@/components/SacredDashboard";
+import SmartMelaApp from "@/components/SmartMelaApp";
 
 const Index = () => {
-  return <SacredDashboard />;
+  return <SmartMelaApp />;
 };
 
 export default Index;
