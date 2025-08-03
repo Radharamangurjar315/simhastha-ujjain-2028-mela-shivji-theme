@@ -2,41 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Spiritual Design System - Lord Shiva & Mahakaleshwar Temple Theme
+All colors MUST be HSL with subtle spiritual branding.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Sacred color palette inspired by Lord Shiva and Mahakaleshwar */
+    --background: 35 20% 97%;  /* Soft temple white with warm undertone */
+    --foreground: 15 20% 15%;  /* Deep charcoal for text */
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 15 20% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 15 20% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Saffron and sacred themes */
+    --primary: 25 85% 45%;  /* Sacred saffron */
+    --primary-foreground: 0 0% 100%;
+    
+    /* Gold accents for divine touch */
+    --sacred-gold: 45 95% 55%;
+    --sacred-gold-foreground: 15 20% 15%;
+    
+    /* Gentle river blue for Ganga/Narmada */
+    --sacred-water: 195 75% 65%;
+    --sacred-water-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 35 25% 92%;  /* Soft temple stone */
+    --secondary-foreground: 15 20% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 35 20% 94%;
+    --muted-foreground: 15 10% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 25 75% 85%;  /* Light saffron */
+    --accent-foreground: 15 20% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 35 15% 88%;
+    --input: 35 15% 88%;
+    --ring: 25 85% 45%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+    
+    /* Spiritual gradients */
+    --gradient-temple: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--sacred-gold)) 100%);
+    --gradient-divine: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--accent)) 100%);
+    --gradient-sacred: linear-gradient(45deg, hsl(var(--sacred-water)) 0%, hsl(var(--primary)) 100%);
+    
+    /* Sacred shadows with saffron glow */
+    --shadow-temple: 0 4px 20px hsl(var(--primary) / 0.15);
+    --shadow-divine: 0 8px 32px hsl(var(--sacred-gold) / 0.2);
+    
+    /* Sacred animations */
+    --transition-divine: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,33 +78,40 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark theme with sacred evening temple ambiance */
+    --background: 15 25% 8%;  /* Deep temple night */
+    --foreground: 35 20% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 15 20% 12%;
+    --card-foreground: 35 20% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 15 20% 12%;
+    --popover-foreground: 35 20% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 25 85% 55%;  /* Bright saffron for dark mode */
+    --primary-foreground: 15 25% 8%;
+    
+    --sacred-gold: 45 90% 65%;
+    --sacred-gold-foreground: 15 25% 8%;
+    
+    --sacred-water: 195 70% 70%;
+    --sacred-water-foreground: 15 25% 8%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 15 15% 18%;
+    --secondary-foreground: 35 20% 95%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 15 15% 15%;
+    --muted-foreground: 35 10% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 25 60% 25%;
+    --accent-foreground: 35 20% 95%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 35 20% 95%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 15 15% 20%;
+    --input: 15 15% 20%;
+    --ring: 25 85% 55%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -101,5 +130,43 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    background-image: 
+      /* Subtle Om symbol watermark */
+      radial-gradient(circle at 20% 80%, hsl(var(--primary) / 0.03) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsl(var(--sacred-gold) / 0.02) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, hsl(var(--sacred-water) / 0.02) 0%, transparent 50%),
+      /* Gentle wave pattern for sacred rivers */
+      repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 100px,
+        hsl(var(--primary) / 0.01) 100px,
+        hsl(var(--primary) / 0.01) 102px
+      );
+  }
+  
+  /* Sacred animations */
+  @keyframes divine-pulse {
+    0%, 100% { opacity: 0.6; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.05); }
+  }
+  
+  @keyframes temple-glow {
+    0%, 100% { box-shadow: 0 0 20px hsl(var(--primary) / 0.1); }
+    50% { box-shadow: 0 0 30px hsl(var(--sacred-gold) / 0.2); }
+  }
+  
+  /* Spiritual utility classes */
+  .sacred-gradient {
+    background: var(--gradient-temple);
+  }
+  
+  .divine-shadow {
+    box-shadow: var(--shadow-divine);
+  }
+  
+  .temple-border {
+    border: 2px solid hsl(var(--sacred-gold) / 0.3);
+    border-radius: var(--radius);
   }
 }

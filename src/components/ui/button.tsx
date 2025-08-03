@@ -18,6 +18,10 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // Sacred variants for spiritual dashboard
+        sacred: "bg-gradient-to-r from-primary to-sacred-gold text-white hover:from-primary/90 hover:to-sacred-gold/90 shadow-lg hover:shadow-xl transition-all duration-300",
+        divine: "bg-sacred-gold text-sacred-gold-foreground hover:bg-sacred-gold/90 border border-sacred-gold/20 shadow-md hover:shadow-lg",
+        temple: "bg-gradient-to-br from-sacred-water/10 to-sacred-gold/10 text-foreground border-2 border-sacred-gold/30 hover:bg-gradient-to-br hover:from-sacred-water/20 hover:to-sacred-gold/20 hover:border-sacred-gold/50",
       },
       size: {
         default: "h-10 px-4 py-2",

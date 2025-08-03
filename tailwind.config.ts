@@ -52,6 +52,15 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Sacred spiritual colors
+				'sacred-gold': {
+					DEFAULT: 'hsl(var(--sacred-gold))',
+					foreground: 'hsl(var(--sacred-gold-foreground))'
+				},
+				'sacred-water': {
+					DEFAULT: 'hsl(var(--sacred-water))',
+					foreground: 'hsl(var(--sacred-water-foreground))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,11 +93,26 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'divine-pulse': {
+					'0%, 100%': { opacity: '0.6', transform: 'scale(1)' },
+					'50%': { opacity: '1', transform: 'scale(1.05)' }
+				},
+				'temple-glow': {
+					'0%, 100%': { boxShadow: '0 0 20px hsl(var(--primary) / 0.1)' },
+					'50%': { boxShadow: '0 0 30px hsl(var(--sacred-gold) / 0.2)' }
+				},
+				'sacred-shimmer': {
+					'0%': { backgroundPosition: '-200% 0' },
+					'100%': { backgroundPosition: '200% 0' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'divine-pulse': 'divine-pulse 3s ease-in-out infinite',
+				'temple-glow': 'temple-glow 4s ease-in-out infinite',
+				'sacred-shimmer': 'sacred-shimmer 3s ease-in-out infinite'
 			}
 		}
 	},
