@@ -45,7 +45,7 @@ const NavigationHeader = ({
             />
             <div>
               <h1 className="text-2xl font-bold text-white">Trinetra</h1>
-              <p className="text-white/80 text-sm">Simhastha Kumbh 2028 - AI-Powered Health Monitoring</p>
+              <p className="text-white/80 text-sm">Simhastha Kumbh 2028 - AI-Powered Health and Sanitation Monitoring</p>
             </div>
           </div>
           <div className="flex items-center gap-4">
