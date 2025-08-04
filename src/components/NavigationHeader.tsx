@@ -44,7 +44,7 @@ const NavigationHeader = ({
               className="w-10 h-10 animate-divine-pulse"
             />
             <div>
-              <h1 className="text-2xl font-bold text-white">SmartMela AI</h1>
+              <h1 className="text-2xl font-bold text-white">Trinetra</h1>
               <p className="text-white/80 text-sm">Simhastha Kumbh 2028 - AI-Powered Health Monitoring</p>
             </div>
           </div>
@@ -80,8 +80,8 @@ const NavigationHeader = ({
                 onClick={() => onSectionChange(item.id)}
                 className={`gap-2 ${
                   activeSection === item.id 
-                    ? "bg-white text-primary" 
-                    : "text-white border-white/20 hover:bg-white/10"
+                    ? "bg-white text-primary shadow-lg" 
+                    : "text-white border-white/30 bg-white/5 hover:bg-white/20 backdrop-blur-sm"
                 }`}
               >
                 <Icon className="w-4 h-4" />
