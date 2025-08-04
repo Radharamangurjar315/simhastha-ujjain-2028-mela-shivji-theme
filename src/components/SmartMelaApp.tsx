@@ -423,7 +423,7 @@ const SmartMelaApp = () => {
             <div className="text-center space-y-4">
               <div className="flex items-center justify-center gap-3">
                 <img src={mahakaleshwarIcon} alt="Mahakaleshwar" className="w-8 h-8" />
-                <span className="text-xl font-bold text-sacred-navy">Simhastha Kumbh Mela 2025</span>
+                <span className="text-xl font-bold text-sacred-navy">Simhastha Kumbh Mela 2028</span>
                 <img src={kalashIcon} alt="Kalash" className="w-8 h-8" />
               </div>
               <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-6 text-sm text-gray-600">
